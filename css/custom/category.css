@@ -1,0 +1,75 @@
+.item-card{
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px var(--dark-lime);
+  transition: 150ms all ease-in;
+}
+
+.item-card:hover{
+  box-shadow: 0px 0px 8px var(--lime);
+}
+
+.item-card .item-description{
+  background: var(--lime);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.item-card .item-specs{
+  display:flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+.item-card .item-specs span{
+  flex:3;
+  padding: 4px 5px;
+}
+
+.item-card .item-specs img{
+  flex:1;
+  padding: 4px 5px;
+}
+
+.item-card .item-image{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.item-card .item-image img{
+  width: auto;
+    height: 200px;
+}
+.item-card .item-price{
+/*   position: absolute;
+  bottom: 10px;
+  right: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding: 0 16px;
+  color: var(--dark-lime);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.item-card .item-price button{
+  margin: 0 !important;
+  padding: 8px;
+  border-color: var(--lime) !important;
+  border: none !important;;
+  color: var(--dark-lime) !important;
+  box-shadow: 0 0 0 transparent;
+  font-size: 1.2rem;
+}
+
+.item-card .item-price button span{
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.pagination .page-item.active .page-link,.pagination .page-item.active .page-link:hover {
+  background-color: var(--dark-lime)
+}

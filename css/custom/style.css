@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --lime: #cddc39;
+  --dark-lime: #a4b02e;
+}
+* {
+  font-family: Quicksand;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: "header";
+}
+main {
+  grid-area: "main";
+}
+footer {
+  grid-area: "footer";
+}
+
+.logo-bar .actions i {
+  font-size: 2rem;
+}
